@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="es-AR">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="author" content="Horacio Carlos Maciel de Lima" />
+    <meta name="description" content="Productos de la Barberia Alura" />
+    <meta name="keywords"
+        content="html, html5, css, css3, Oracle, Oracle ONE, Alura, Alura Latam, Curso, Curso HTML5 y CSS3, productos de barbería" />
+    <title>Contacto - Barbería Alura</title>
+    <link rel="icon" type="image/x-icon" href="./img/logo.ico" />
+    <link rel="stylesheet" href="./css/reset.css" />
+    <link rel="stylesheet" href="./css/style.css" />
+</head>
+
+<body>
+    <header>
+        <div class="caja">
+            <!-- Caja superior-->
+            <h1>
+                <img src="./img/productos/logo.png"
+                    alt="Logo de la Barbería Alura que muestra la silueta de un rostro masculino con anteojos, barba y sobrepuesto la palaba Alura" />
+            </h1>
+            <nav>
+                <ul>
+                    <li><a href="./index.html">Home</a></li>
+                    <li><a href="./productos.html">Productos</a></li>
+                    <li><a href="./contacto.html">Contacto</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <form>
+            <!--Formulario de contacto-->
+            <label for="nombreapellido">Nombre y Apellido</label>
+            <input type="text" id="nombreapellido" class="input-padron" required />
+
+            <label for="correoelectronico">Correo Electrónico</label>
+            <input type="email" id="correoelectronico" class="input-padron" required placeholder="email@dominio.com" />
+
+            <label for="telefono">Teléfono</label>
+            <input type="tel" id="telefono" class="input-padron" required placeholder="(+XX) XXXX-XXXXXX" />
+
+            <label for="mensaje">Mensaje</label>
+            <textarea cols="70" rows="10" id="mensaje" class="input-padron" required></textarea>
+
+            <fieldset>
+                <legend>¿Cómo le gustaría que lo contactemos?</legend>
+
+                <label for="radio-email"><input type="radio" name="contacto" value="email"
+                        id="radio-email" />Email</label>
+
+                <label for="radio-telefono"><input type="radio" name="contacto" value="telefono"
+                        id="radio-telefono" />Teléfono</label>
+
+                <label for=" radio-whatsapp"><input type="radio" name="contacto" value="whatsapp" id="radio-whatsapp"
+                        checked />Whatsapp</label>
+            </fieldset>
+
+            <fieldset>
+                <legend>¿En cuál horario prefiere ser atendido?</legend>
+                <!-- Título del campo-->
+                <select>
+                    <option>Mañana</option>
+                    <option>Tarde</option>
+                    <option>Noche</option>
+                </select>
+            </fieldset>
+
+            <label class="checkbox"><input type="checkbox" checked />¿Le gustaría recibir novedades de la
+                Barbería Alura?</label>
+
+            <input type="submit" value="Enviar formulario" class="enviar" />
+        </form>
+
+        <table>
+            <!-- Tabla de días de atención-->
+            <thead>
+                <tr>
+                    <th>Día</th>
+                    <th>Horario</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Lunes</td>
+                    <td>08 a 20 hs</td>
+                </tr>
+                <tr>
+                    <td>Miércoles</td>
+                    <td>08 a 20 hs</td>
+                </tr>
+                <tr>
+                    <td>Viernes</td>
+                    <td>08 a 20 hs</td>
+                </tr>
+            </tbody>
+        </table>
+    </main>
+
+    <footer>
+        <img src="./img/productos/logo-blanco.png"
+            alt="Logo de la Barbería Alura que muestra la silueta blanca de un rostro masculino con anteojos, barba y sobrepuesto la palaba Alura" />
+        <p class="copyright">&copy Copyright Barbería Alura - 2022</p>
+    </footer>
+    >
+</body>
+
+</html>
